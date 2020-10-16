@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(196, 191, 191);
+}
+.Taschenrechner-Körper {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(6,100px);
+}
+.Taschenrechner-Körper >button {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color:white;
+    font-size: 35px;
+}
+.Taschenrechner-Körper >button:hover {
+    background-color: rgb(55, 172, 81);
+}
+.output {
+    grid-column: 1/-1;
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+}
+.input {
+    font-size: 35px;
+    grid-column: 1 / -1;
+    background-color:rgba(184, 174, 174, 0.699);
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
